@@ -15,7 +15,7 @@ const Register = () => {
 
     const configuration = {
       method: "post",
-      url: "https://frontend-x9yq.onrender.com/register",
+      url: "https://github.com/yohanskahsay/classBe/register",
       data: { email, password },
     };
     axios(configuration);
