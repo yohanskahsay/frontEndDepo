@@ -15,7 +15,7 @@ const Register = () => {
 
     const configuration = {
       method: "post",
-      url: "http://localhost:3001/register",
+      url: "https://frontend-x9yq.onrender.com/",
       data: { email, password },
     };
     axios(configuration);
