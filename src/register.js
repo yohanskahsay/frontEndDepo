@@ -13,12 +13,16 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const configuration = {
-      method: "post",
-      url: "https://backend04-m3sw.onrender.com/register",
-      data: { email, password },
-    };
-    axios(configuration);
+    try {
+      const response = axios.post("http://localhost:3001/register", {
+        email,
+        password,
+      });
+
+      alert("Registration successful!");
+    } catch (error) {
+      alert("Registration failed!");
+    }
   };
 
   return (
